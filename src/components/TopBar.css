@@ -1,0 +1,100 @@
+.TopBarSloganContainer {
+    background-color: #ecf0f1;
+    padding-bottom: 50px;
+}
+
+.TopBarItemContainer {
+    float: right;
+    height: 100%;
+}
+
+.TopBarItem {
+    float: left;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: table;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+.DarkTopBar .TopBarItem, .DarkTopBar {
+    color: black;
+}
+
+.LightTopBar .TopBarItem, .LightTopBar {
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.TopBarItem:hover {
+    color: white;
+    background-color: var(--color-main);
+    border-radius: 3px;
+}
+
+.TopBarItem > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.TopBar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 2;
+}
+
+.LightTopBar {
+    color: white;
+}
+
+.MobileMenu {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.MobileTopBarItem {
+    width: 100%;
+    float: left;
+    transition: all .1s ease-in-out;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.MobileTopBarItem > * {
+    padding-right: 10px;
+}
+
+.MobileTopBarItem:hover {
+    background-color: var(--color-main);
+    border-radius: 3px;
+    color: white;
+}
+
+.MobileTopBarContainer {
+    width: 100%;
+    text-align: right;
+}
+
+@media screen and (min-width: 1000px) {
+    .TopBarMenuItem {
+        display: none;
+    }
+}
+
+/* Responsive Stuff */
+@media screen and (max-width: 1000px) {
+    .TopBarItemContainer :not(:first-child) {
+        display: none;
+    }
+    /*.topbar .topbaricon {*/
+        /*display: table;*/
+    /*}*/
+}

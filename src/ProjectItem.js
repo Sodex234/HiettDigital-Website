@@ -1,0 +1,21 @@
+import React, { Component } from "react";
+
+export default class ProjectItem extends Component {
+
+    render() {
+        return (
+            <div className={"col-12 PortfolioItemContainer HoverableExpand"} style={{ backgroundColor: this.props.light ? "white" : "#ecf0f1", backgroundImage: "url(" + this.props.image + ")" }}>
+                <div className={"container"}>
+                    <div className={"row"}>
+                        <div className={"col-md-6 PortfolioItem"} style={{ backgroundColor: this.props.light ? "#ecf0f1" : "white", borderTopColor: this.props.topColor }}>
+                            <p className={"PortfolioSubLine"}>{this.props.projectType}</p>
+                            <h1>{this.props.name}</h1>
+                            <p>{this.props.description}</p>
+                            <button style={{marginTop: 15, borderColor: this.props.topColor, color: this.props.topColor}} className={"Btn"}>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}

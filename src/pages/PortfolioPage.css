@@ -1,0 +1,35 @@
+.ProjectItemCard {
+    background-color: white;
+    border-radius: 3px;
+    padding-bottom: 15px;
+    margin: 5px;
+    border-top: 10px solid red;
+    margin-top: 25px;
+}
+
+.BackToTopButton {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: var(--color-main);
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+    display: table;
+    text-align: center;
+
+    transition: background-color .1s ease-in-out;
+}
+
+.BackToTopButton:hover {
+    background-color: #2980b9;
+}
+
+.BackToTopButton > i {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
