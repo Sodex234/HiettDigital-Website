@@ -10,6 +10,7 @@ import MatadorImage from "../images/matadorgaming.png";
 import "./PortfolioPage.css";
 import TopBar from "../components/TopBar";
 import SmallPortfolioCard from "../SmallPortfolioCard";
+import DataStore, {downloadData} from "../data/DataCache";
 
 export default class PortfolioPage extends Component {
 
@@ -24,6 +25,22 @@ export default class PortfolioPage extends Component {
     }
 
     render() {
+        const pItemArray = [];
+
+        let i = 0;
+        DataStore.projects.forEach(projectItem => {
+            pItemArray.push({type: projectItem.type, element: (
+                <SmallPortfolioCard
+                    name={projectItem.title}
+                    description={projectItem.description}
+                    targetUrl={projectItem.targeturl}
+                    buttonName={projectItem.buttonname}
+                    color={"#27ae60"}
+                    key={i++}
+                />
+            )});
+        });
+
         return (
             <div className={"col-12"}>
                 <TopBar/>
@@ -82,71 +99,17 @@ export default class PortfolioPage extends Component {
                             <div className={"col-md-4"}>
                                 <h3 style={{textAlign: "center", paddingBottom: 10}}>Projects</h3>
 
-                                <SmallPortfolioCard
-                                    name={"Project Name"}
-                                    description={"This is some description line about it"}
-                                    targetUrl={"#"}
-                                    color={"#27ae60"}
-                                />
-
-                                <SmallPortfolioCard
-                                    name={"Project Name"}
-                                    description={"This is some description line about it"}
-                                    targetUrl={"#"}
-                                    color={"#27ae60"}
-                                />
-
-                                <SmallPortfolioCard
-                                    name={"Project Name"}
-                                    description={"This is some description line about it"}
-                                    targetUrl={"#"}
-                                    color={"#27ae60"}
-                                />
-
-                                <SmallPortfolioCard
-                                    name={"Project Name"}
-                                    description={"This is some description line about it"}
-                                    targetUrl={"#"}
-                                    color={"#27ae60"}
-                                />
+                                {pItemArray.filter(item => item.type === "PROJECT").map(item => item.element)}
                             </div>
                             <div className={"col-md-4"}>
                                 <h3 style={{textAlign: "center", paddingBottom: 10}}>Media</h3>
 
-                                <SmallPortfolioCard
-                                    name={"Article Name"}
-                                    description={"Marling School"}
-                                    targetUrl={"#"}
-                                    color={"#27ae60"}
-                                />
-
-                                <SmallPortfolioCard
-                                    name={"Article Name"}
-                                    description={"Marling School"}
-                                    targetUrl={"#"}
-                                    color={"#27ae60"}
-                                />
+                                {pItemArray.filter(item => item.type === "MEDIA").map(item => item.element)}
                             </div>
                             <div className={"col-md-4"}>
                                 <h3 style={{textAlign: "center", paddingBottom: 10}}>Quotes</h3>
 
-                                <SmallPortfolioCard
-                                    name={"\"Some quote taken about me and what I've done blah blah blah\""}
-                                    description={"- From where"}
-                                    color={"#27ae60"}
-                                />
-
-                                <SmallPortfolioCard
-                                    name={"\"Some quote taken about me and what I've done blah blah blah\""}
-                                    description={"- From where"}
-                                    color={"#27ae60"}
-                                />
-
-                                <SmallPortfolioCard
-                                    name={"\"Some quote taken about me and what I've done blah blah blah\""}
-                                    description={"- From where"}
-                                    color={"#27ae60"}
-                                />
+                                {pItemArray.filter(item => item.type === "QUOTE").map(item => item.element)}
                             </div>
                         </div>
                     </div>

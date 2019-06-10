@@ -90,3 +90,18 @@ body, html {
     /*padding-top: 25px;*/
     /*padding-bottom: 25px;*/
 /*}*/
+
+.LoadingPage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-main);
+    color: white;
+    text-align: center;
+    display: table;
+}
+
+.LoadingPageContainer {
+    display: table-cell;
+    vertical-align: middle;
+}

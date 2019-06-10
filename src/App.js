@@ -3,13 +3,42 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import PortfolioPage from "./pages/PortfolioPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import { downloadData } from "./data/DataCache";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 export default class App extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            loaded: false
+        };
+
+        downloadData().then(() => {
+            this.setState({ loaded: true });
+        });
+    }
+
     render() {
+        if(!this.state.loaded) {
+            return (
+                <div className={"LoadingPage"}>
+                    <div className={"LoadingPageContainer"}>
+                        <i className={"fas fa-spinner fa-spin fa-3x"} />
+
+                        <br />
+                        <br />
+
+                        <h1>HiettDigital</h1>
+                        <p>Hold up! We're loading...</p>
+                    </div>
+                </div>
+            );
+        }
+
         return(
             <Router>
                 <div className={"App row"}>
