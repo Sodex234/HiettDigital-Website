@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class ProjectItem extends Component {
 
@@ -11,7 +12,10 @@ export default class ProjectItem extends Component {
                             <p className={"PortfolioSubLine"}>{this.props.projectType}</p>
                             <h1>{this.props.name}</h1>
                             <p>{this.props.description}</p>
-                            <button style={{marginTop: 15, borderColor: this.props.topColor, color: this.props.topColor}} className={"Btn"}>Learn More</button>
+
+                            <Link to={this.props.targetUrl}>
+                                <button style={{marginTop: 15, borderColor: this.props.topColor, color: this.props.topColor}} className={"Btn"}>Learn More</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

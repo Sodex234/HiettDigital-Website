@@ -1,0 +1,87 @@
+.ProductTitle {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.ProductSlogan {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 0;
+    margin-top: 0;
+    color: #e8e8e8;
+    padding-bottom: 25px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.ProductGradientTop {
+    /*background-image: linear-gradient(30deg, #24C6DC, #514A9D);*/
+    background-image: linear-gradient(30deg, #2ecc71, #3498db);
+    background-size: 400% 400%;
+
+    /* Animated Background */
+    -webkit-animation: BackgroundAnimation 25s ease infinite;
+    -moz-animation: BackgroundAnimation 25s ease infinite;
+    animation: BackgroundAnimation 25s ease infinite;
+
+    color: white;
+}
+
+/* Animated Background */
+@-webkit-keyframes BackgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BackgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BackgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.ProductStageNumberContainer {
+    border-radius: 5px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    display: table;
+
+    font-size: 32px;
+
+    margin-top: 32px;
+    margin-bottom: 25px;
+}
+
+.ProductStageNumberContainer > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.StageAreaContent {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.RightStageAreaContent {
+    text-align: right;
+}
+
+.LeftStageAreaContent {
+    text-align: left;
+}
+
+.FloatRight {
+    float: right;
+}
+
+.FloatLeft {
+    float: left;
+}

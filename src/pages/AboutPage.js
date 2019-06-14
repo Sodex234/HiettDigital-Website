@@ -31,16 +31,14 @@ export default class AboutPage extends Component {
                                         enjoys understanding "<span className={"SloganColor"}>how</span>", but also "<span className={"SloganColor"}>why</span>"</h1>
 
                                     <p>
-                                        I'm Scott, and I'm from England. This is some text about me and it will span over a few lines
-                                        and contain lots and lots of relevant information. For now, it's just dummy text. I have just
-                                        typed all of this out and it will be super meaningful but I'm too lazy to figure out what I
-                                        want to write yet, so you get this. See? Magic. You can read this. It's in a pretty font,
-                                        on a pretty webpage. At this point I'm just making up words and stringing them together for
-                                        no apparent reason, because why not? You're not going to stop me!
-
+                                        I'm Scott, and I'm from England. I've been programming since the age of 7, and have never looked back.
+                                        I enjoy writing in as many languages as I can, constantly learning and challenging myself. Through this,
+                                        I have created (and worked non stop) on some awesome projects. I'm always looking to take the next
+                                        steps into innovating the next leading product, in any field. Being a student, I have a large amount
+                                        of free time, which allows me to experiment with a range of ideas.
                                         <br /><br />
 
-                                        Oooo, a break. Now we're talking about something serious.
+                                        Have a project you need development help with? Need a new website?
                                     </p>
 
                                     <br />
@@ -58,8 +56,8 @@ export default class AboutPage extends Component {
                                 <div className={"container"}>
                                     <div className={"row"}>
                                         <div className={"col-md-4"}>
-                                            <h4>Pizza?</h4>
-                                            <p>Pizza.</p>
+                                            <h4>Other Hobbies</h4>
+                                            <p>I'm also really into music & politics! In my spare time, I play the bass guitar.</p>
                                         </div>
                                         <div className={"col-md-4"}>
                                             <h4>Languages / Frameworks</h4>

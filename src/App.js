@@ -7,6 +7,7 @@ import { downloadData } from "./data/DataCache";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
+import ProductInfoPage from "./pages/ProductInfoPage";
 
 export default class App extends Component {
 
@@ -45,6 +46,7 @@ export default class App extends Component {
                     <Route path={"/"} exact component={PortfolioPage} />
                     <Route path={"/about"} component={AboutPage} />
                     <Route path={"/contact"} component={ContactPage} />
+                    <Route path={"/project/hyber"} component={ProductInfoPage} />
 
                     <div className={"col-12 DropShadowItem"} style={{backgroundColor: "#2c3e50"}}>
                         <div className={"container"}>
