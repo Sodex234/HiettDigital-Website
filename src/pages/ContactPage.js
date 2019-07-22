@@ -34,7 +34,9 @@ export default class ContactPage extends Component {
 
                                         <br /><br />
 
-                                        <button className={"Btn BtnFilled"}>scott@hiett.digital</button>
+                                        <a href={"mailto:scott@hiett.digital"}>
+                                            <button className={"Btn BtnFilled"}>scott@hiett.digital</button>
+                                        </a>
                                     </p>
 
                                     <br />

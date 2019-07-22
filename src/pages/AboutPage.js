@@ -43,7 +43,9 @@ export default class AboutPage extends Component {
 
                                     <br />
 
-                                    <button className={"Btn BtnFilled"}>CV</button>
+                                    <a href={"http://hiett.digital/cv.pdf"} target={"_blank"}>
+                                        <button className={"Btn BtnFilled"}>CV</button>
+                                    </a>
                                     <Link to={"/contact"}>
                                         <button className={"Btn"} style={{marginLeft: 5}}>Contact Me</button>
                                     </Link>

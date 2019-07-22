@@ -13,9 +13,9 @@ export default class ProjectItem extends Component {
                             <h1>{this.props.name}</h1>
                             <p>{this.props.description}</p>
 
-                            <Link to={this.props.targetUrl}>
+                            <a target="_blank" href={this.props.targetUrl}>
                                 <button style={{marginTop: 15, borderColor: this.props.topColor, color: this.props.topColor}} className={"Btn"}>Learn More</button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

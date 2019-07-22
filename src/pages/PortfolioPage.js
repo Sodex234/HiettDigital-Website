@@ -65,7 +65,7 @@ export default class PortfolioPage extends Component {
                     name={"Hyber"}
                     projectType={"Hackathon Winner"}
                     description={"HYBER is a digital currency exchange service. Using AI and sentiment analysis we can intelligently maximise your trip spending money, exchanging between currencies at the best times."}
-                    targetUrl={"/project/hyber"}
+                    targetUrl={"https://devpost.com/software/hyber-kg03ap"}
                     topColor={"#3498db"}
                     light={true}
                     image={HyberImage}
@@ -74,8 +74,8 @@ export default class PortfolioPage extends Component {
                 <ProjectItem
                     name={"SimSync"}
                     projectType={"Sims 4 Multiplayer"}
-                    description={"I am a lead developer and co-owner of Delane Studios and SimSync, the popular Sims 4 Multiplayer mod. We currently have over 20,000 people in our Discord server."}
-                    targetUrl={"#"}
+                    description={"I am a lead developer and co-owner of Delane Studios and SimSync, the popular Sims 4 Multiplayer mod. We currently have over 28,000 people in our Discord server."}
+                    targetUrl={"http://www.delane-studios.com"}
                     topColor={"#27ae60"}
                     light={false}
                     image={DelaneImage}
@@ -85,7 +85,7 @@ export default class PortfolioPage extends Component {
                     name={"Matador Gaming"}
                     projectType={"Website & Overlay System"}
                     description={"eSports website for my school team. Built on Wordpress. I also created custom overlays using SASS and jQuery."}
-                    targetUrl={"#"}
+                    targetUrl={"http://www.mtd-gaming.uk"}
                     topColor={"#c0392b"}
                     light={true}
                     image={MatadorImage}

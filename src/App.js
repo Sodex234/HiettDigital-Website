@@ -46,7 +46,7 @@ export default class App extends Component {
                     <Route path={"/"} exact component={PortfolioPage} />
                     <Route path={"/about"} component={AboutPage} />
                     <Route path={"/contact"} component={ContactPage} />
-                    <Route path={"/project/hyber"} component={ProductInfoPage} />
+                    {/*<Route path={"/project/hyber"} component={ProductInfoPage} />*/}
 
                     <div className={"col-12 DropShadowItem"} style={{backgroundColor: "#2c3e50"}}>
                         <div className={"container"}>
