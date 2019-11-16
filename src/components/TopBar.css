@@ -94,7 +94,8 @@
     .TopBarItemContainer :not(:first-child) {
         display: none;
     }
+
     /*.topbar .topbaricon {*/
-        /*display: table;*/
+    /*display: table;*/
     /*}*/
 }
