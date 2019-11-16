@@ -12,7 +12,7 @@ const downloadData = async () => {
     dataDownloaded = true;
 
     // Download the data
-    dataObject.projects = (await axios.get("http://hiett.digital/projects-new.json")).data.projects;
+    dataObject.projects = (await axios.get("getprojects.php")).data.projects;
 
     return dataObject;
 };

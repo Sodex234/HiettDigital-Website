@@ -70,7 +70,7 @@ export default class AboutPage extends Component {
                                             <p className={"SocialTextClear"}>
                                                 <a href={"https://instagram.com/scott._h"} target={"_blank"}><i className="fab fa-fw fa-instagram" /> scott._h</a>
                                                 <br />
-                                                <a href={"https://twitter.com/sodex234"} target={"_blank"}><i className="fab fa-fw fa-twitter" /> sodex234</a>
+                                                <a href={"https://twitter.com/hiettdigital"} target={"_blank"}><i className="fab fa-fw fa-twitter" /> hiettdigital</a>
                                                 <br />
                                                 <i className="fab fa-fw fa-discord" /> Scott H#1834
                                             </p>
