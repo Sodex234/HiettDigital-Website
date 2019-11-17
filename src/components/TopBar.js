@@ -28,19 +28,13 @@ export default class TopBar extends Component {
   }
 
   buildItems(standardItemClassName) {
-    const items = [];
-
-    this.state.items.forEach(item => {
-      items.push((
-        <Link to={item.link}>
-          <div className={standardItemClassName}>
-            <p>{item.name}</p>
-          </div>
-        </Link>
-      ));
-    });
-
-    return items;
+    return this.state.items.map(({ link, name }) => (
+      <Link to={link} key={`item_link_to_${link}`}>
+        <div className={standardItemClassName}>
+          <p>{name}</p>
+        </div>
+      </Link>
+    ));
   }
 
   render() {

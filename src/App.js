@@ -16,10 +16,12 @@ export default class App extends Component {
     this.state = {
       loaded: false
     };
+  }
 
-    downloadData().then(() => {
-      this.setState({loaded: true});
-    });
+  async componentDidMount() {
+    await downloadData();
+
+    this.setState({ loaded: true });
   }
 
   render() {

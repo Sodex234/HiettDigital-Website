@@ -6,8 +6,22 @@ const projects = [
     "targeturl": "https://www.forbes.com/sites/madhvimavadiya/2019/05/31/scott-hiett-the-next-generation-of-computer-science/#37f155796179",
     "type": "MEDIA"
   }, {
+    "title": "Keynote Speaker",
+    "description": "Xaxis Deviate Event EMEA 2019 - \"View from the Inside: How the 'Next Generation' consumes media\"",
+    "buttonname": "Read my summary article",
+    "targeturl": "https://www.linkedin.com/pulse/engaging-generation-z-scott-hiett/",
+    "type": "MEDIA",
+  }, {
     "title": "\"The next generation of Computer Science\"",
     "description": "- Forbes",
+    "type": "QUOTE"
+  }, {
+    "title": "\"Congrats to the four finalists [...] including a 15-year-old who built an AI model for sentiment analysis of social media to predict currency exchange rates in 48 hours and blew all of our minds!\"",
+    "description": "- Heather Adler, Global Partner Development at Microsoft",
+    "type": "QUOTE",
+  }, {
+    "title": "\"Scott absolutely blew us away! Great insight and a glimpse of the future.\"",
+    "description": "- Paul Rowlinson, Managing Director GroupM Digital, UK",
     "type": "QUOTE"
   }, {
     "title": "\"the winning team included an amazing coding whizz who is just 15 years old\"",

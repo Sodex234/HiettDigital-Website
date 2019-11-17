@@ -6,6 +6,7 @@ import ProjectItem from "../ProjectItem";
 import HyberImage from "../images/hyber.png";
 import DelaneImage from "../images/delanesimsync.png";
 import MatadorImage from "../images/matadorgaming.png";
+import EdgeImage from "../images/edge.png";
 
 import "./PortfolioPage.css";
 import TopBar from "../components/TopBar";
@@ -58,6 +59,16 @@ export default class PortfolioPage extends Component {
             </Link>
           </div>
         </div>
+
+        <ProjectItem
+          name={"EDGE"}
+          projectType={"The back office of Esports"}
+          description={"At EDGE I act as a platform engineer, revolutionising the Esports world using smart contracts & payments."}
+          targetUrl={"https://edge.gg"}
+          topColor={"#00ACED"}
+          light={false}
+          image={EdgeImage}
+        />
 
         <ProjectItem
           name={"Hyber"}
