@@ -12,6 +12,6 @@ ci_build_and_deploy:
     - npm install
     - npm run build
     - cd build
-    - aws s3 cp ./ s3://hiett-digital-site/ --recursive
+    - aws s3 cp ./ s3://hiett.digital/ --recursive
   only:
     - master
